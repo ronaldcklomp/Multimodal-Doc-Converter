@@ -1,0 +1,2 @@
+[console_scripts]
+mmrag-convert = mmrag_converter.cli:app

@@ -1,0 +1,20 @@
+# SHA256 Integrity Report - V2.0 Baseline
+# Generated: 2025-12-28T00:44:48Z
+# ENGINE_USE: Claude 4.5 Opus (Architect)
+
+## Sample Documents (examples/sample_docs/)
+
+9bb15af08a7d5b1015657862dcac0f940f0939b065791506ff36cf4e3d730502  examples/sample_docs/Falkner, Leonie - ChatGPT Praktijk-handboek.epub
+0a92e1b1444bf3a11d97133bd7189be5b30c30b3b0326c7273891c1532288aff  examples/sample_docs/Train a Model Faster with torch.compile and Gradient Accumulation.html
+4e8bf9372108921b84c573328c3ad42c1154cc1c8f1693ec1a3fe2aa59395363  examples/sample_docs/Hybrid_electric_vehicles_and_their_challenges.pdf
+16d6cee853865896293a640a87916d1673b036faba0235dad50aebf30dbf2d45  examples/sample_docs/Seffer, David - KI En ChatGPT, Praktische Gids Voor Online Business Met Digitale Producten.epub
+200e778fd78e377715a06472224f9e2ab5d6bb218462b3c30cdb3e557c9419b3  examples/sample_docs/Firearms.pdf
+cf180b2fa33eef912b31af6473133a5141fbd3b6846b2ca51c4446a7424905c7  examples/sample_docs/AIOS LLM Agent Operating System.pdf
+2702736ddc3dd1b9887f17f2aeeb71b2e38f8e8fe5bb2e14f27b6f97389ad866  examples/sample_docs/Keywords In ControlDesk.pptx
+7c510487bafdc40edfab2c82d1eff33b08f6b2c020f8c91f8ba593eb66b47db5  examples/sample_docs/Combat Aircraft - August 2025 UK.pdf
+ce1af4b5e7d3cf7b19814aacbd7751a66e539b829ab564c7e17706cbbc5474d2  examples/sample_docs/HarryPotter_and_the_Sorcerers_Stone.pdf
+9b61a26b47c644ccebd343de310d740bff2dbbc116517e9f65a0f6b0be485a1f  examples/sample_docs/IRJET_Modeling_of_Solar_PV_system_under.pdf
+ac60adb5bdfcb5bb490ea338fe24c850070fc549abd6b5bdf395c094a2735410  examples/sample_docs/PCWorld_July_2025_USA.pdf
+5284fbdc72bc6b7bb3d467fe3f486ff73adcbf1339f025fa20a681aac63e2809  examples/sample_docs/Eu06_simulation_specs.xlsx
+758efa95113816bd84cd81aca785b9a4db1f11bcb004abd6a5becb1c731fc63a  examples/sample_docs/ATZ.Elektronik.-.Effizientere.Software.Entwicklung.GERMAN.RETAiL.eBOOk-PDFWriters.pdf
+12b0b70e5ed6299816e02789d560f4f111c16eafc9eda86e299e6fb18ee7f830  examples/sample_docs/DAF EMS hillab Tool description.docx

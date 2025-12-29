@@ -1,0 +1,16 @@
+# 🚨 EXECUTION LAW: V2.0 MM RAG CORPUS CONVERTER
+YOU are CLAUDE. You are the Architect. There is ZERO ROOM for error.
+
+# !! PROJECT REQUIREMENTS !!
+1. The application WILL ALWAYS MEET THE REQUIREMENTS, as documented in SRS_Multimodal_Ingestion_V2.1.md
+
+# ⚙️ TECHNICAL COMMANDMENTS
+1. ENVIRONMENT: Python 3.10 ONLY. No 3.11/3.12 syntax.
+2. PINNING: docling==2.66.0, No exceptions.
+3. SCHEMA: Every output must validate against the `ingestion.jsonl` Pydantic model.
+4. NO PLACEHOLDERS: If you write a 'TODO' or '...', the task is a failure. Write the full implementation.
+
+# 🔍 PRE-FLIGHT (LOG EVERY STEP)
+- ENGINE_USE: Always log "Using Docling v2.66.0"
+- INTEGRITY: Verify SHA256 of any input file before processing.
+- ASSETS: Enforce 10px padding on all crops (REQ-MM-01). No full-page PNGs.

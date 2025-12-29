@@ -1,0 +1,93 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multimodal-doc-converter"
+version = "2.0.0"
+description = "High-fidelity ETL pipeline for Multimodal RAG Ingestion - V2.0 Compliant"
+requires-python = ">=3.10,<3.11"
+authors = [
+  { name = "Ronald", email = "ronald@kurp.nl" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Text Processing :: General",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    # === CORE COMPATIBILITY (The NumPy Shield) ===
+    "numpy>=1.24.4,<2.0.0",               # REQUIRED: Prevents NumPy 2.x crashes
+    "transformers>=4.45.0",               # REQUIRED: Bridge between Docling and Sentence-Transformers
+    
+    # === CORE CLI & VALIDATION ===
+    "typer>=0.12.0",
+    "pydantic>=2.0",
+    
+    # === PDF PIPELINE (REQ-PDF) ===
+    "docling==2.66.0",                    # PINNED: Main structure analysis
+    "docling-models>=2.0.0",              # Native Docling models (replaces standalone surya)
+    "pymupdf>=1.24.0",                    
+    
+    # === OCR & IMAGE (REQ-PDF-03) ===
+    "pytesseract>=0.3.10",                
+    "Pillow>=10.0.0",                     
+    
+    # === EPUB & HTML (REQ-EPUB / REQ-HTML) ===
+    "ebooklib>=0.18",                     
+    "beautifulsoup4>=4.12.0",             
+    "lxml>=4.9.0",                        
+    "trafilatura>=1.6.0",                 
+    
+    # === CHUNKING & EMBEDDINGS (REQ-CHUNK-03) ===
+    "sentence-transformers>=3.0.0",       # UPGRADED: v3.x is much more stable with transformers 4.42+
+    
+    # === UTILITIES ===
+    "rich>=13.0.0",                       
+    "tqdm>=4.66.0",                       
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+
+[project.scripts]
+mmrag-convert = "mmrag_converter.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
