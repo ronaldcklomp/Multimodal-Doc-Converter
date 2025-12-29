@@ -32,8 +32,7 @@ dependencies = [
     "pydantic>=2.0",
     
     # === PDF PIPELINE (REQ-PDF) ===
-    "docling==2.66.0",                    # PINNED: Main structure analysis
-    "docling-models>=2.0.0",              # Native Docling models (replaces standalone surya)
+    "docling>=2.66.0",              # Native Docling models (replaces standalone surya)
     "pymupdf>=1.24.0",                    
     
     # === OCR & IMAGE (REQ-PDF-03) ===
@@ -64,7 +63,7 @@ dev = [
 ]
 
 [project.scripts]
-mmrag-convert = "mmrag_converter.cli:app"
+mmrag-v2 = "mmrag_converter.v2.processor:app"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

@@ -1,2 +1,2 @@
 [console_scripts]
-mmrag-convert = mmrag_converter.cli:app
+mmrag-v2 = mmrag_converter.v2.processor:app

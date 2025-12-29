@@ -1,18 +1,17 @@
-"""
-Schema module for V2.0 Ingestion Engine.
-
-Exports all schema definitions for the ingestion.jsonl format.
-"""
+"""V2.0 Schema Module - Pydantic models for ingestion.jsonl."""
 from .ingestion_schema import (
+    # Enums
     Modality,
     FileType,
     ContentClassification,
+    # Schema models
     HierarchyMetadata,
     SpatialMetadata,
     ChunkMetadata,
     AssetReference,
     SemanticContext,
     IngestionChunk,
+    # Factory functions
     create_text_chunk,
     create_image_chunk,
     create_table_chunk,

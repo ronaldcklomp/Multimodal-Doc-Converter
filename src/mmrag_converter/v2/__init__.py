@@ -14,11 +14,11 @@ Key Components:
 Author: Claude 4.5 Opus (Architect)
 Date: 2025-12-28
 """
-from .state.context_state import (
+from .state import (
     ContextStateV2,
     create_context_state,
 )
-from .schema.ingestion_schema import (
+from .schema import (
     Modality,
     FileType,
     ContentClassification,
